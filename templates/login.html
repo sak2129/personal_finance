@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Personal Finance Application | Login Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='theme.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+        <div>
+          <div class="page-header"></div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Please login</h3>
+            </div>
+            <div class="panel-body">
+                <form action="" method="post">
+                <input type="text" placeholder="Username" name="username" value="{{
+                request.form.username }}">
+                <input type="password" placeholder="Password" name="password" value="{{
+                request.form.password }}">
+                <input class="btn btn-default" type="submit" value="Login">
+                </form>
+                {% if error %}
+                    <p class="error"><strong>Error:</strong> {{ error }}
+                {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>
