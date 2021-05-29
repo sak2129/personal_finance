@@ -1,1 +1,9 @@
 Flask==1.0.2
+pandas
+numpy
+google
+google-cloud
+google-cloud-vision
+google-cloud-bigquery
+pyarrow
+bokeh==2.3.2
