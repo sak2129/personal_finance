@@ -11,3 +11,4 @@ flask_sqlalchemy
 flask_login
 pylint
 pytest
+Cython
