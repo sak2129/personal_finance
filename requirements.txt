@@ -9,3 +9,5 @@ pyarrow
 bokeh==2.3.2
 flask_sqlalchemy
 flask_login
+pylint
+pytest
