@@ -5,7 +5,7 @@ setup:
 	python3 -m venv ~/.finance
 
 test:
-	python -m pytest tests/*.py
+	python -m pytest -vv --cov=financelib tests/*.py
 
 lint:
 	pylint --disable=R,C linttest.py

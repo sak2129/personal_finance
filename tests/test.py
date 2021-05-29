@@ -1,2 +1,5 @@
-def say():
-    return 1
+from financelib import repomod
+
+def test_func():
+	result = repomod.myfunc()
+	assert result == 1
