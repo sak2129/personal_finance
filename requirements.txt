@@ -7,3 +7,5 @@ google-cloud-vision
 google-cloud-bigquery
 pyarrow
 bokeh==2.3.2
+flask_sqlalchemy
+flask_login

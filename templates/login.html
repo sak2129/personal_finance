@@ -30,8 +30,15 @@
             </div>
 
             <div class="panel-body">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="notification is-danger">
+                        {{ messages[0] }}</a>.
+                    </div>
+                {% endif %}
+                {% endwith %}
 
-              <form method="POST" action="">
+              <form method="POST" action="/login">
                 <div class="form-group">
                 <input type="text" class="form-control" placeholder="Username" name="username" value="{{request.form.username}}">
                 </div>
