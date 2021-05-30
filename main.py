@@ -124,7 +124,7 @@ forecast_data = dataframe[dataframe['forecast_value'].notnull()][['timestamp','f
 @app.route('/machinelearning')
 def machinelearning():
     # Create a plot comparing the different sort algorithms
-    p = figure(plot_width=950, 
+    p = figure(plot_width=900, 
             plot_height=400,
             title='Historical Data',
             x_axis_label = 'Date',
